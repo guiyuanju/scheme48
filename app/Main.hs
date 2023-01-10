@@ -147,7 +147,7 @@ showError (TypeMismatch expected found) =
     ++ ", found "
     ++ show found
 showError (Parser parseErr) =
-  "Parse error ar "
+  "Parse error at "
     ++ show parseErr
 
 instance Show LispError where show = showError
